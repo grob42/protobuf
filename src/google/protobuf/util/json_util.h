@@ -34,11 +34,15 @@
 #define GOOGLE_PROTOBUF_UTIL_JSON_UTIL_H__
 
 #include "absl/base/attributes.h"
+#include "absl/status/status.h"
 #include "google/protobuf/json/json.h"
 
 namespace google {
 namespace protobuf {
 namespace util {
+
+using Status = ::absl::Status;
+
 using JsonParseOptions = ::google::protobuf::json::ParseOptions;
 using JsonPrintOptions = ::google::protobuf::json::PrintOptions;
 
